@@ -36,7 +36,7 @@ jobs:
         uses: wearerequired/lint-action@v2
         with:
           eslint: true
-          prettier: true
+          # prettier: true
           
       # Runs a single command using the runners shell
       - name: Install Dependncies
