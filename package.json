@@ -5,7 +5,8 @@
   "main": "colorCoder.js",
   "scripts": {
     "test": "jasmine-node spec --verbose",
-    "start": "node app/colorCoder.js & node app/checker.js"
+    "start": "node app/colorCoder.js & node app/checker.js",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
