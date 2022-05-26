@@ -28,6 +28,16 @@ jobs:
         with: 
           node-version: '14'
 
+      # ESLint and Prettier must be in `package.json`
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Run linters
+        uses: wearerequired/lint-action@v2
+        with:
+          eslint: true
+          prettier: true
+          
       # Runs a single command using the runners shell
       - name: Install Dependncies
         run:  sudo npm install
